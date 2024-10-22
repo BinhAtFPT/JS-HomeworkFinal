@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="gallery.css">
-	<script src = "gallery.js"></script>
-</head>
-<body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
-	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Photo Gallery</title>
+		<link rel="stylesheet" href="gallery.css">
+		<script src = "gallery.js"></script>
+	</head>
+	<body onload="giveTabIndex()">
+		<div id = "image">
+			Hover over an image below to display here.
+		</div>
+		<img class = "preview" alt = "Vietnamese's Pho" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADMyixT25yHM6-_3y6K4OmOaCwT4dvsLQfg&s" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "upDate(this)" onblur = "unDo()">
+		<img class = "preview" alt = "Vietnamese's Bun Cha" src = "https://upload.wikimedia.org/wikipedia/commons/4/4d/B%C3%BAn_ch%E1%BA%A3_Vietnamese_food.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "upDate(this)" onblur = "unDo()">
+		<img class = "preview" alt = "Vietnamese's Com Tam" src = "https://upload.wikimedia.org/wikipedia/commons/b/b0/C%C6%A1m_T%E1%BA%A5m%2C_Da_Nang%2C_Vietnam.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "upDate(this)" onblur = "unDo()">
+		<img class = "preview" alt = "Vietnamese's Minced Pork Rice Rolls" src = "https://upload.wikimedia.org/wikipedia/commons/7/7e/Vietnamese_minced_pork_rice_rolls.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "upDate(this)" onblur = "unDo()">
+		<img class = "preview" alt = "Vietnamese's Bun Bo Hue" src = "https://upload.wikimedia.org/wikipedia/commons/4/40/B%C3%BAn_b%C3%B2_Hu%E1%BA%BF.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "upDate(this)" onblur = "unDo()">
+		<img class = "preview" alt = "Vietnamese's Mi Quang" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFeUjMATkxF2bPz-R9eyweYX9keSCJ8UcXA&s" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "upDate(this)" onblur = "unDo()">
+	</body>
 </html>
