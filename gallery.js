@@ -31,3 +31,12 @@ function unDo(){
     replace.style.backgroundImage = `url('${css.backgroundImage}')`;
     replace.innerHTML = origDiv;
 }
+
+function giveTabIndex() {
+    console.log("Giving all images a tabindex");
+    currentImages = document.querySelectorAll(".preview");
+    for (i = 0; i < currentImages.length; i++) {
+        console.log("Image "+ i);
+        currentImages[i].setAttribute("tabindex", i + 1);
+    }
+}
