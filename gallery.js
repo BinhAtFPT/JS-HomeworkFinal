@@ -12,13 +12,9 @@ function upDate(previewPic){
     to the alt text of the preview image 
     */
     console.log("upDate Function is triggered");
-    const replace = document.getElementById('image');
-    const imgSrc = previewPic.src;
-    const imgAlt = previewPic.alt;
-    // Save the Original Div text to later undo
+    document.getElementById('image').style.backgroundImage = `url('${previewPic.src}')`;
     origDiv = image.innerHTML;
-    replace.style.backgroundImage = `url('${imgSrc}')`;
-    replace.innerHTML = previewPic.alt;
+    document.getElementById('image').innerHTML = previewPic.alt;
 }
    
 function unDo(){
@@ -32,7 +28,6 @@ function unDo(){
     console.log("unDo Function is triggered");
     const replace = document.getElementById('image');
     const css = getComputedStyle(replace);
-    const imgSrc = css.backgroundImage;
-    replace.style.backgroundImage = `url('${imgSrc}')`;
+    replace.style.backgroundImage = `url('${css.backgroundImage}')`;
     replace.innerHTML = origDiv;
 }
